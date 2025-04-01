@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Welcome to My Simple Go Website!</h1>
+  <p>This is a web page served using Go!</p>
+  <ul>
+    <li><a href="/about">About Me</a></li>
+    <li><a href="/hobby">My Hobby</a></li>
+  </ul>
+
+  <h2>Click a Button to Change Background Color</h2>
+  
+  <div class="button-container">
+    <button class="btn red" onclick="changeColor('red')">Red</button>
+    <button class="btn blue" onclick="changeColor('blue')">Blue</button>
+    <button class="btn green" onclick="changeColor('green')">Green</button>
+    <button class="btn yellow" onclick="changeColor('yellow')">Yellow</button>
+    <button class="btn purple" onclick="changeColor('purple')">Purple</button>
+  </div>
+
+  <script>
+    function changeColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>
